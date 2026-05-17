@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM TAYLOR | Premium Boutique</title>
+    <meta name="description" content="SAM TAYLOR - Butik Premium sejak 1999 di Bandung. Spesialis baju wanita, pria, jas, batik, gamis, dan seragam.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SAM TAYLOR</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#portfolio">Koleksi & Katalog</a></li>
+            <li><a href="#studio">Studio Pola</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('assets/images/hero_nature.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-up">Keceriaan Keluarga Dalam Balutan Keanggunan</h1>
+            <p class="animate-up delay-1">Temukan harmoni sempurna dengan alam dan keluarga. Menyediakan koleksi eksklusif untuk pria, wanita, dan couple.</p>
+            <a href="#portfolio" class="btn btn-primary animate-up delay-2">Jelajahi Koleksi</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container glass-card">
+            <h2>Tentang SAM TAYLOR</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>SAM TAYLOR telah hadir melayani kebutuhan fashion Anda sejak tahun <strong>1999</strong>. Berawal dari kecintaan kami terhadap detail jahitan dan keanggunan busana, kami terus berkembang menghadirkan karya terbaik.</p>
+                    <p>Kini, kami bertransformasi untuk lebih dekat dengan Anda. Kunjungi butik kami di:</p>
+                    <address>
+                        <strong>Jl. Pangauban Kp. Tipar RT. 03 RW. 09</strong><br>
+                        Ds. Pangauban, Kecamatan Katapang<br>
+                        Kabupaten Bandung, Jawa Barat
+                    </address>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>24+</h3>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10K+</h3>
+                        <p>Klien Puas</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Kualitas Premium</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio & E-Catalog Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">E-Katalog Busana</h2>
+            <p class="section-subtitle">Jelajahi portofolio desain model baju pria dan wanita kami.</p>
+            
+            <div class="catalog-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="batik-couple">Batik Couple</button>
+                <button class="filter-btn" data-filter="abaya">Abaya & Gamis</button>
+                <button class="filter-btn" data-filter="kerudung">Kerudung</button>
+                <button class="filter-btn" data-filter="pria">Jas & Kemeja Pria</button>
+                <button class="filter-btn" data-filter="seragam">Seragam Kantor</button>
+            </div>
+
+            <div class="catalog-grid">
+                <div class="catalog-item" data-category="batik-couple">
+                    <div class="catalog-img">
+                        <img src="assets/images/batik_couple.png" alt="Batik Couple Ayah Ibu Anak">
+                        <div class="catalog-overlay">
+                            <span>Batik Couple Keluarga</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="kerudung">
+                    <div class="catalog-img">
+                        <img src="assets/images/kerudung.png" alt="Kerudung Premium">
+                        <div class="catalog-overlay">
+                            <span>Kerudung Eksklusif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="abaya">
+                    <div class="catalog-img">
+                        <img src="assets/images/abaya.png" alt="Abaya Elegan">
+                        <div class="catalog-overlay">
+                            <span>Abaya Modern</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="abaya">
+                    <div class="catalog-img">
+                        <img src="assets/images/gamis.png" alt="Gamis Kekinian">
+                        <div class="catalog-overlay">
+                            <span>Gamis Kekinian</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pria">
+                    <div class="catalog-img">
+                        <img src="assets/images/jas_pria.png" alt="Jas Pria">
+                        <div class="catalog-overlay">
+                            <span>Jas Pria Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="pria">
+                    <div class="catalog-img">
+                        <img src="assets/images/batik_pria.png" alt="Batik Pria">
+                        <div class="catalog-overlay">
+                            <span>Batik Pria Eksklusif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="seragam">
+                    <div class="catalog-img">
+                        <img src="assets/images/seragam_kantor.png" alt="Seragam Kantor">
+                        <div class="catalog-overlay">
+                            <span>Seragam Kantor Profesional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pattern Studio Section -->
+    <section id="studio" class="studio">
+        <div class="container glass-card studio-container">
+            <h2 class="section-title">Studio Pola Interaktif</h2>
+            <p class="section-subtitle">Cocokkan warna, corak batik, dan aksesoris pada pola baju impian Anda.</p>
+
+            <div class="studio-layout">
+                <!-- Controls -->
+                <div class="studio-controls">
+                    <div class="control-group">
+                        <label>Jenis Kelamin:</label>
+                        <select id="gender-select" class="custom-select">
+                            <option value="wanita">Wanita</option>
+                            <option value="pria">Pria</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Pilih Model Pakaian:</label>
+                        <select id="model-select" class="custom-select">
+                            <!-- Options will be populated by JS -->
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Pilih Warna Dasar:</label>
+                        <div class="color-picker" id="color-picker">
+                            <div class="color-swatch active" style="background-color: #f5f5dc;" data-color="#f5f5dc"></div>
+                            <div class="color-swatch" style="background-color: #ffffff;" data-color="#ffffff"></div>
+                            <div class="color-swatch" style="background-color: #800000;" data-color="#800000"></div>
+                            <div class="color-swatch" style="background-color: #000080;" data-color="#000080"></div>
+                            <div class="color-swatch" style="background-color: #2e8b57;" data-color="#2e8b57"></div>
+                            <div class="color-swatch" style="background-color: #333333;" data-color="#333333"></div>
+                            <div class="color-swatch" style="background-color: #d4af37;" data-color="#d4af37"></div>
+                            <div class="color-swatch" style="background-color: #ffb6c1;" data-color="#ffb6c1"></div>
+                            <div class="color-swatch" style="background-color: #8a2be2;" data-color="#8a2be2"></div>
+                            <div class="color-swatch" style="background-color: #a0522d;" data-color="#a0522d"></div>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Pilih Corak Batik:</label>
+                        <div class="pattern-picker" id="pattern-picker">
+                            <div class="pattern-swatch active" data-pattern="none">Polos</div>
+                            <div class="pattern-swatch" style="background-image: url('assets/images/batik_texture.png');" data-pattern="assets/images/batik_texture.png"></div>
+                            <div class="pattern-swatch" style="background-image: url('assets/images/batik_texture_2.png');" data-pattern="assets/images/batik_texture_2.png"></div>
+                            <div class="pattern-swatch" style="background-image: url('assets/images/batik_texture_3.png');" data-pattern="assets/images/batik_texture_3.png"></div>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label>Aksesoris Tambahan (Manik-manik, dll):</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="acc-manik"> Manik-manik Elegan</label>
+                            <label><input type="checkbox" id="acc-bordir"> Bordir Emas</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Canvas -->
+                <div class="studio-preview">
+                    <div class="preview-area" id="preview-area">
+                        <div class="clothing-mask" id="clothing-mask"></div>
+                        <div class="accessories-layer" id="acc-layer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>SAM TAYLOR</h2>
+                <p>Butik Premium & Jahitan Eksklusif</p>
+                
+                <div class="payment-methods">
+                    <h3>Metode Pembayaran</h3>
+                    <div class="payment-icons">
+                        <span class="payment-icon">💳 Transfer Bank (BCA, Mandiri, BNI)</span>
+                        <span class="payment-icon">📱 E-Wallet (GoPay, OVO, Dana)</span>
+                        <span class="payment-icon">💵 Cash on Delivery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <p>Jl. Pangauban Kp. Tipar RT. 03 RW. 09</p>
+                <p>Ds. Pangauban, Kec. Katapang, Kab. Bandung</p>
+                <p>Email: info@samtaylor.id</p>
+                <p>Telp: (022) 1234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SAM TAYLOR Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6289656015463" class="wa-float" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>
