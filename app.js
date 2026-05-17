@@ -1,11 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
+    const heroBg = document.querySelector('.hero-bg');
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const scrollY = window.scrollY;
+        
+        if (scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
+        }
+
+        // Parallax Effect for Hero Background
+        if (heroBg && scrollY <= window.innerHeight) {
+            heroBg.style.transform = `translateY(${scrollY * 0.4}px)`;
         }
     });
 
@@ -19,9 +28,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
             navLinks.classList.remove('active');
+            
+            // Smooth scroll for anchor links
+            if(link.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if(targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 70, // Adjust for navbar height
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
+    });
+
+    // Scroll Reveal Animation with Intersection Observer
+    const revealElements = document.querySelectorAll('.reveal, .catalog-item');
+    
+    const revealOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Stop observing once revealed
+            }
+        });
+    }, revealOptions);
+
+    revealElements.forEach(el => {
+        revealOnScroll.observe(el);
     });
 
     // Catalog Filtering
