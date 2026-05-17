@@ -232,7 +232,7 @@ a {
 
 .hero-content {
     max-width: 800px;
-    padding: 0 2rem;
+    padding: 4rem 2rem 0 2rem; /* Added top padding to push it down slightly */
     z-index: 3;
     position: relative;
 }
@@ -242,7 +242,8 @@ a {
     margin-bottom: 1.5rem;
     color: var(--text-main);
     text-shadow: none;
-    letter-spacing: 2px;
+    letter-spacing: -0.5px; /* Tighter letter spacing */
+    line-height: 1.15; /* Tighter vertical line height for wrapped text */
 }
 
 .hero p {
